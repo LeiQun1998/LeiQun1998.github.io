@@ -20,7 +20,7 @@
   <meta content="Mr.阿Q" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1660119340381" as="style">
+  <link rel="preload" href="/css/style.css?time=1660121057633" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://leiqun1998.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-07-21T09:10:00.000Z">
-<meta property="article:modified_time" content="2022-08-10T07:54:17.290Z">
+<meta property="article:modified_time" content="2022-08-10T08:43:55.388Z">
 <meta property="article:author" content="Mr.阿Q">
 <meta property="article:tag" content="小程序">
 <meta property="article:tag" content="uniapp">
@@ -1671,8 +1671,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1660119340381" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1660119340381"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1660121057633" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1660121057633"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1749,9 +1749,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1660119340381","sites":"/js/plugins/sites.js?time=1660119340381","friends":"/js/plugins/friends.js?time=1660119340381","parallax":"/js/plugins/parallax.js?time=1660119340381","rightMenu":"/js/plugins/rightMenu.js?time=1660119340381","contributors":"/js/plugins/contributors.js?time=1660119340381","message":"/js/thirdparty/message.js?time=1660119340381","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660119340381","search":"/js/search/hexo.js?time=1660119340381"},"css":{"style":"/css/style.css?time=1660119340381","message":"/css/message.css?time=1660119340381"}},
+    cdn: {"js":{"app":"/js/app.js?time=1660121057633","sites":"/js/plugins/sites.js?time=1660121057633","friends":"/js/plugins/friends.js?time=1660121057633","parallax":"/js/plugins/parallax.js?time=1660121057633","rightMenu":"/js/plugins/rightMenu.js?time=1660121057633","contributors":"/js/plugins/contributors.js?time=1660121057633","message":"/js/thirdparty/message.js?time=1660121057633","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660121057633","search":"/js/search/hexo.js?time=1660121057633"},"css":{"style":"/css/style.css?time=1660121057633","message":"/css/message.css?time=1660121057633"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Aug 10 2022 16:15:40 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Aug 10 2022 16:44:17 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","repos","category","tagcloud","donate"],
       for_post: ["repos","toc"],
@@ -2658,7 +2658,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：501 字</p>
+      <p>字数：523 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2695,7 +2695,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><code>grant_type</code> 的值一般固定为 <code>&#39;authorization_code&#39;</code></p>
 <p>此时，只需要接收前端传过来的 <code>codeID: 临时code</code> 值即可</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 微信登录 获取openid、session_key</span></span><br><span class="line">router.<span class="title function_">get</span>(<span class="string">&#x27;/getSession&#x27;</span>, <span class="keyword">async</span> (req, res) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> code = req.<span class="property">query</span>.<span class="property">codeID</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(code)</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 调取微信官方提供的接口换取openid</span></span><br><span class="line">    <span class="keyword">await</span> axios.<span class="title function_">get</span>(<span class="string">&#x27;https://api.weixin.qq.com/sns/jscode2session&#x27;</span>, &#123;</span><br><span class="line">    	<span class="attr">params</span>: &#123;</span><br><span class="line">        	<span class="attr">appid</span>: <span class="string">&#x27;wx9876a8474de1c8fc&#x27;</span>,</span><br><span class="line">            <span class="attr">secret</span>: <span class="string">&#x27;82179592abfeb25eceabcaa552fd42ad&#x27;</span>,</span><br><span class="line">            <span class="attr">js_code</span>: code,</span><br><span class="line">            <span class="attr">grant_type</span>: <span class="string">&#x27;authorization_code&#x27;</span></span><br><span class="line"> 		&#125;</span><br><span class="line"> 	&#125;)</span><br><span class="line">	.<span class="title function_">then</span>(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">    	res.<span class="title function_">send</span>(data.<span class="property">data</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">    	res.<span class="title function_">send</span>(error)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 微信登录 获取openid、session_key</span></span><br><span class="line">router.<span class="title function_">get</span>(<span class="string">&#x27;/getSession&#x27;</span>, <span class="keyword">async</span> (req, res) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> code = req.<span class="property">query</span>.<span class="property">codeID</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(code)</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 调取微信官方提供的接口换取openid</span></span><br><span class="line">    <span class="keyword">await</span> axios.<span class="title function_">get</span>(<span class="string">&#x27;https://api.weixin.qq.com/sns/jscode2session&#x27;</span>, &#123;</span><br><span class="line">    	<span class="attr">params</span>: &#123;</span><br><span class="line">        	<span class="attr">appid</span>: <span class="string">&#x27;xxxxxxxx&#x27;</span>, <span class="comment">// 示例，正式请换成真实数据</span></span><br><span class="line">            <span class="attr">secret</span>: <span class="string">&#x27;xxxxxxxx&#x27;</span>, <span class="comment">// 示例，正式请换成真实数据</span></span><br><span class="line">            <span class="attr">js_code</span>: code,</span><br><span class="line">            <span class="attr">grant_type</span>: <span class="string">&#x27;authorization_code&#x27;</span></span><br><span class="line"> 		&#125;</span><br><span class="line"> 	&#125;)</span><br><span class="line">	.<span class="title function_">then</span>(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">    	res.<span class="title function_">send</span>(data.<span class="property">data</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">    	res.<span class="title function_">send</span>(error)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 
 
@@ -2740,7 +2740,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-10T15:54:17+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-10T16:43:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2022年8月10日</p>
@@ -3032,7 +3032,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="totalcount">
           <i class="fas fa-chart-area"></i>
-          <span class="post-count">字数统计：12k</span>
+          <span class="post-count">字数统计：12.1k</span>
         </div>
         <div class='copyright'>
         <p><a href="/">Copyright © 2020-2022 Mr.阿Q</a></p>
@@ -3077,7 +3077,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1660119340381.js"></script>
+<script src="/js/app.js?time=1660121057633.js"></script>
 
 
 
@@ -3235,7 +3235,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1660119340381')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1660121057633')</script>
 
 
 
@@ -3364,19 +3364,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1660119340381")
+        volantis.js("/js/plugins/sites.js?time=1660121057633")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1660119340381")
+        volantis.js("/js/plugins/friends.js?time=1660121057633")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1660119340381")
+        volantis.js("/js/plugins/contributors.js?time=1660121057633")
       }
     
   };
@@ -3491,7 +3491,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1660119340381");
+    return volantis.js("/js/search/hexo.js?time=1660121057633");
   }
 
   function loadSearchService() {
@@ -3560,7 +3560,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["/assets/img/bg-imgs/bj-13.jpg","/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-2.jpeg","/assets/img/bg-imgs/bj-5.jpeg","/assets/img/bg-imgs/bj-6.jpeg","/assets/img/bg-imgs/bj-10.jpg"];
+  let imgs = ["/assets/img/bg-imgs/bj-13.jpg","/assets/img/bg-imgs/bj-6.jpeg","/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-10.jpg","/assets/img/bg-imgs/bj-5.jpeg","/assets/img/bg-imgs/bj-2.jpeg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3601,7 +3601,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1660119340381').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1660121057633').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -3835,7 +3835,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.阿Q","url":"https://leiqun1998.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/","sameAs":["https://github.com/volantis-x"],"description":"分享踩坑技术和生活"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://leiqun1998.github.io/","name":"Mr.阿Q"}},{"@type":"ListItem","position":2,"item":{"@id":"https://leiqun1998.github.io/categories/小程序/","name":"小程序"}},{"@type":"ListItem","position":3,"item":{"@id":"https://leiqun1998.github.io/2022/07/微信小程序登录/","name":"微信小程序登录"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"微信小程序登录","description":"","datePublished":"2022-07-21T09:10:00.000Z","dateModified":"2022-08-10T07:54:17.290Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://leiqun1998.github.io/2022/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95/"},"author":{"@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/"},"publisher":{"@type":"Organization","name":"Mr.阿Q","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://leiqun1998.github.io/2022/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95/","wordCount":0,"articleSection":"小程序","keywords":"小程序,uniapp,uview","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.阿Q","url":"https://leiqun1998.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/","sameAs":["https://github.com/volantis-x"],"description":"分享踩坑技术和生活"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://leiqun1998.github.io/","name":"Mr.阿Q"}},{"@type":"ListItem","position":2,"item":{"@id":"https://leiqun1998.github.io/categories/小程序/","name":"小程序"}},{"@type":"ListItem","position":3,"item":{"@id":"https://leiqun1998.github.io/2022/07/微信小程序登录/","name":"微信小程序登录"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"微信小程序登录","description":"","datePublished":"2022-07-21T09:10:00.000Z","dateModified":"2022-08-10T08:43:55.388Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://leiqun1998.github.io/2022/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95/"},"author":{"@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/"},"publisher":{"@type":"Organization","name":"Mr.阿Q","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://leiqun1998.github.io/2022/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95/","wordCount":0,"articleSection":"小程序","keywords":"小程序,uniapp,uview","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
