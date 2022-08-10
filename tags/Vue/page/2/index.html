@@ -20,7 +20,7 @@
   <meta content="Mr.阿Q" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1660112307724" as="style">
+  <link rel="preload" href="/css/style.css?time=1660119340507" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1666,8 +1666,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1660112307724" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1660112307724"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1660119340507" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1660119340507"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1744,9 +1744,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1660112307724","sites":"/js/plugins/sites.js?time=1660112307724","friends":"/js/plugins/friends.js?time=1660112307724","parallax":"/js/plugins/parallax.js?time=1660112307724","rightMenu":"/js/plugins/rightMenu.js?time=1660112307724","contributors":"/js/plugins/contributors.js?time=1660112307724","message":"/js/thirdparty/message.js?time=1660112307724","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660112307724","search":"/js/search/hexo.js?time=1660112307724"},"css":{"style":"/css/style.css?time=1660112307724","message":"/css/message.css?time=1660112307724"}},
+    cdn: {"js":{"app":"/js/app.js?time=1660119340507","sites":"/js/plugins/sites.js?time=1660119340507","friends":"/js/plugins/friends.js?time=1660119340507","parallax":"/js/plugins/parallax.js?time=1660119340507","rightMenu":"/js/plugins/rightMenu.js?time=1660119340507","contributors":"/js/plugins/contributors.js?time=1660119340507","message":"/js/thirdparty/message.js?time=1660119340507","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660119340507","search":"/js/search/hexo.js?time=1660119340507"},"css":{"style":"/css/style.css?time=1660119340507","message":"/css/message.css?time=1660119340507"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Aug 10 2022 14:18:27 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Aug 10 2022 16:15:40 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","repos","category","tagcloud","donate"],
       for_post: ["repos","toc"],
@@ -2592,6 +2592,265 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/10/Vue%E4%B8%ADDiv%E6%BB%9A%E5%8A%A8%E6%9D%A1%E8%87%AA%E5%8A%A8%E6%BB%9A%E5%88%B0%E5%88%B0%E6%9C%80%E5%BA%95%E9%83%A8/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.阿Q">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.阿Q">
+    <meta itemprop="description" content="分享踩坑技术和生活">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/10/Vue%E4%B8%ADDiv%E6%BB%9A%E5%8A%A8%E6%9D%A1%E8%87%AA%E5%8A%A8%E6%BB%9A%E5%88%B0%E5%88%B0%E6%9C%80%E5%BA%95%E9%83%A8/"  itemprop="url">
+        Div滚动条自动滚动到最底部
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Div滚动条自动滚动到最底部
+Vue中Div滚动条自动滚动到最底部
+目标Div设置 ref=”chatlog”
+this.$refs.chatlog.$el 获取目标
+$nextTick 在修改数据后在回调中获取更新后的DOM
+
+123456// 日志区滚动处理,滚动条自动滚动到底部chatlogUpdate()&#123;    this.$nextTick(() =&gt; &#123;...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-10-14T00:00:00+08:00">2021-10-14</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/10/Vue%E4%B8%ADDiv%E6%BB%9A%E5%8A%A8%E6%9D%A1%E8%87%AA%E5%8A%A8%E6%BB%9A%E5%88%B0%E5%88%B0%E6%9C%80%E5%BA%95%E9%83%A8/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/10/Vue%E8%B7%AF%E7%94%B1%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2title/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.阿Q">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.阿Q">
+    <meta itemprop="description" content="分享踩坑技术和生活">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/10/Vue%E8%B7%AF%E7%94%B1%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2title/"  itemprop="url">
+        Vue路由发生变化修改页面title
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+Vue路由发生变化修改页面title
+
+router.js页面代码123456789101112131415161718192021222324252627282930313233343536373839import Vue from &#x27;vue&#x27;import Router from &#x27;vue-router&#x27;Vue.use(Router)const r...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-10-08T00:00:00+08:00">2021-10-08</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Vue/">Vue</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Vue/" itemprop="url"><span itemprop="name">Vue</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/10/Vue%E8%B7%AF%E7%94%B1%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2title/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/10/el-table%E8%AE%BE%E7%BD%AE%E5%86%85%E5%AE%B9%E5%B1%85%E4%B8%AD%E5%8F%8A%E5%A4%8D%E9%80%89%E6%A1%86%E5%8F%AA%E8%83%BD%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.阿Q">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.阿Q">
+    <meta itemprop="description" content="分享踩坑技术和生活">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/10/el-table%E8%AE%BE%E7%BD%AE%E5%86%85%E5%AE%B9%E5%B1%85%E4%B8%AD%E5%8F%8A%E5%A4%8D%E9%80%89%E6%A1%86%E5%8F%AA%E8%83%BD%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA/"  itemprop="url">
+        el-table设置内容居中及复选框只能选择一个
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        &lt;el-table&gt;设置表头和单元格内容居中
+关键在于以下两个属性：
+:header-cell-style (表头样式)
+:cell-style (单元格样式)
+给其设置textAlign: &#39;center&#39;
+
+12345678910111213&lt;el-table	border    ref=&quot;table&quot;    :data=&quot;...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-10-08T00:00:00+08:00">2021-10-08</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Vue/">Vue</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Vue/" itemprop="url"><span itemprop="name">Vue</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/10/el-table%E8%AE%BE%E7%BD%AE%E5%86%85%E5%AE%B9%E5%B1%85%E4%B8%AD%E5%8F%8A%E5%A4%8D%E9%80%89%E6%A1%86%E5%8F%AA%E8%83%BD%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/09/el-table%E4%B8%AD%E5%A4%9A%E4%B8%AA%E6%93%8D%E4%BD%9C%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BC%98%E5%8C%96%E6%A1%88%E4%BE%8B/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.阿Q">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.阿Q">
+    <meta itemprop="description" content="分享踩坑技术和生活">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/09/el-table%E4%B8%AD%E5%A4%9A%E4%B8%AA%E6%93%8D%E4%BD%9C%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BC%98%E5%8C%96%E6%A1%88%E4%BE%8B/"  itemprop="url">
+        el-table中多个操作菜单的优化案例
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657&lt;el-table-column width=&quot;150px&quot; fixed=&quot;right&quot;&gt;    &lt;template slot...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-09-18T00:00:00+08:00">2021-09-18</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Vue/">Vue</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Vue/" itemprop="url"><span itemprop="name">Vue</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/09/el-table%E4%B8%AD%E5%A4%9A%E4%B8%AA%E6%93%8D%E4%BD%9C%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BC%98%E5%8C%96%E6%A1%88%E4%BE%8B/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/09/Echarts%E5%9B%BE%E8%A1%A8%E5%A4%A7%E5%B0%8F%E8%87%AA%E9%80%82%E5%BA%94/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Mr.阿Q">
@@ -2778,76 +3037,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://leiqun1998.github.io/2021/01/vue%E8%83%8C%E6%99%AF%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.阿Q">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.阿Q">
-    <meta itemprop="description" content="分享踩坑技术和生活">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/01/vue%E8%83%8C%E6%99%AF%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C/"  itemprop="url">
-        vue项目-添加粒子背景样式
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-Vue组件：【 vue-particles 】
-设置粒子背景
-官网地址：https://vue-particles.netlify.app/
-
-1、安装粒子组件1npm install vue-particles --save-dev
-
-2、使用Main.js12import VueParticles from &#x27;vue-particles&#x27;Vue.use(VuePar...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-01T11:11:55+08:00">2021-01-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Vue/">Vue</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Vue/" itemprop="url"><span itemprop="name">Vue</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/01/vue%E8%83%8C%E6%99%AF%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -2862,8 +3051,14 @@ Vue组件：【 vue-particles 】
           </a>
         
         <p class="current">
-          2 / 2
+          2 / 3
         </p>
+        
+          <a class="next" rel="next" href="/tags/Vue/page/3/">
+            <section class="post next white-box shadow">
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
         
       </div>
     
@@ -2997,9 +3192,29 @@ Vue组件：【 vue-particles 】
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/JS/" href="/categories/JS/"
+            active-action="action-categoriesJS"
+            ><div class='name'>JS</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/VsCode/" href="/categories/VsCode/"
+            active-action="action-categoriesVsCode"
+            ><div class='name'>VsCode</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/Vue/" href="/categories/Vue/"
             active-action="action-categoriesVue"
-            ><div class='name'>Vue</div><div class='badge'>(9)</div></a></li>
+            ><div class='name'>Vue</div><div class='badge'>(10)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%8D%9A%E5%AE%A2/" href="/categories/%E5%8D%9A%E5%AE%A2/"
+            active-action="action-categoriesE58D9AE5AEA2"
+            ><div class='name'>博客</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"
+            active-action="action-categoriesE5B08FE7A88BE5BA8F"
+            ><div class='name'>小程序</div><div class='badge'>(2)</div></a></li>
         
       </ul>
     </div>
@@ -3023,7 +3238,7 @@ Vue组件：【 vue-particles 】
 
 
     <div class='content'>
-      <a href="/tags/CSS/" style="font-size: 16.5px; color: #888">CSS</a> <a href="/tags/Echarts/" style="font-size: 14px; color: #999">Echarts</a> <a href="/tags/Element-UI/" style="font-size: 21.5px; color: #666">Element UI</a> <a href="/tags/Git/" style="font-size: 14px; color: #999">Git</a> <a href="/tags/JS/" style="font-size: 19px; color: #777">JS</a> <a href="/tags/VsCode/" style="font-size: 14px; color: #999">VsCode</a> <a href="/tags/Vue/" style="font-size: 24px; color: #555">Vue</a> <a href="/tags/hexo/" style="font-size: 16.5px; color: #888">hexo</a>
+      <a href="/tags/Bug/" style="font-size: 14px; color: #999">Bug</a> <a href="/tags/CSS/" style="font-size: 20px; color: #707070">CSS</a> <a href="/tags/Echarts/" style="font-size: 14px; color: #999">Echarts</a> <a href="/tags/Element-UI/" style="font-size: 22px; color: #636363">Element UI</a> <a href="/tags/Express/" style="font-size: 14px; color: #999">Express</a> <a href="/tags/Git/" style="font-size: 16px; color: #8b8b8b">Git</a> <a href="/tags/JS/" style="font-size: 20px; color: #707070">JS</a> <a href="/tags/Mongodb/" style="font-size: 14px; color: #999">Mongodb</a> <a href="/tags/Notepad/" style="font-size: 14px; color: #999">Notepad++</a> <a href="/tags/Pinia/" style="font-size: 14px; color: #999">Pinia</a> <a href="/tags/Vite/" style="font-size: 14px; color: #999">Vite</a> <a href="/tags/Volar/" style="font-size: 14px; color: #999">Volar</a> <a href="/tags/VsCode/" style="font-size: 18px; color: #7e7e7e">VsCode</a> <a href="/tags/Vue/" style="font-size: 24px; color: #555">Vue</a> <a href="/tags/Vue3/" style="font-size: 16px; color: #8b8b8b">Vue3</a> <a href="/tags/hexo/" style="font-size: 16px; color: #8b8b8b">hexo</a> <a href="/tags/md/" style="font-size: 16px; color: #8b8b8b">md</a> <a href="/tags/uniapp/" style="font-size: 16px; color: #8b8b8b">uniapp</a> <a href="/tags/uview/" style="font-size: 16px; color: #8b8b8b">uview</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 18px; color: #7e7e7e">博客</a> <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 16px; color: #8b8b8b">小程序</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a>
     </div>
   </section>
 
@@ -3139,7 +3354,7 @@ Vue组件：【 vue-particles 】
       
         <div class="totalcount">
           <i class="fas fa-chart-area"></i>
-          <span class="post-count">字数统计：7.6k</span>
+          <span class="post-count">字数统计：12k</span>
         </div>
         <div class='copyright'>
         <p><a href="/">Copyright © 2020-2022 Mr.阿Q</a></p>
@@ -3184,7 +3399,7 @@ Vue组件：【 vue-particles 】
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1660112307724.js"></script>
+<script src="/js/app.js?time=1660119340507.js"></script>
 
 
 
@@ -3342,7 +3557,7 @@ Vue组件：【 vue-particles 】
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1660112307724')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1660119340507')</script>
 
 
 
@@ -3471,19 +3686,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1660112307724")
+        volantis.js("/js/plugins/sites.js?time=1660119340507")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1660112307724")
+        volantis.js("/js/plugins/friends.js?time=1660119340507")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1660112307724")
+        volantis.js("/js/plugins/contributors.js?time=1660119340507")
       }
     
   };
@@ -3598,7 +3813,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1660112307724");
+    return volantis.js("/js/search/hexo.js?time=1660119340507");
   }
 
   function loadSearchService() {
@@ -3667,7 +3882,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["/assets/img/bg-imgs/bj-10.jpg","/assets/img/bg-imgs/bj-6.jpeg","/assets/img/bg-imgs/bj-5.jpeg","/assets/img/bg-imgs/bj-2.jpeg","/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-13.jpg"];
+  let imgs = ["/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-6.jpeg","/assets/img/bg-imgs/bj-13.jpg","/assets/img/bg-imgs/bj-5.jpeg","/assets/img/bg-imgs/bj-2.jpeg","/assets/img/bg-imgs/bj-10.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3708,7 +3923,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1660112307724').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1660119340507').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
