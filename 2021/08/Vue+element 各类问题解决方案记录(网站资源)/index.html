@@ -20,24 +20,26 @@
   <meta content="Mr.阿Q" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1660103218138" as="style">
+  <link rel="preload" href="/css/style.css?time=1660112307612" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Mr.阿Q</title>
-  <meta name="keywords" content="null">
+  <title>Vue+element各类问题解决方案记录(网站资源) - Mr.阿Q</title>
+  <meta name="keywords" content="Vue,Element UI,null">
   <meta name="description" content="Vue+element各类问题解决方案记录(网站资源) 1、在vue中如何获取token，并将token写进header 2、Vue-cli3.0怎么修改打包后的js文件名使用webpack配置vue.config.js文件 1234567891011121314const TimeStamp &#x3D; new Date().getTime();&#x2F;&#x2F; const MiniCssExtractPlugin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mr.阿Q">
+<meta property="og:title" content="Vue+element各类问题解决方案记录(网站资源)">
 <meta property="og:url" content="https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/index.html">
 <meta property="og:site_name" content="Mr.阿Q">
 <meta property="og:description" content="Vue+element各类问题解决方案记录(网站资源) 1、在vue中如何获取token，并将token写进header 2、Vue-cli3.0怎么修改打包后的js文件名使用webpack配置vue.config.js文件 1234567891011121314const TimeStamp &#x3D; new Date().getTime();&#x2F;&#x2F; const MiniCssExtractPlugin">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://leiqun1998.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-08-10T08:22:18.000Z">
-<meta property="article:modified_time" content="2021-08-10T08:22:18.000Z">
+<meta property="article:published_time" content="2021-08-09T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-10T06:11:49.248Z">
 <meta property="article:author" content="Mr.阿Q">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="Element UI">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://leiqun1998.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1668,8 +1670,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1660103218138" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1660103218138"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1660112307612" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1660112307612"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1746,9 +1748,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1660103218138","sites":"/js/plugins/sites.js?time=1660103218138","friends":"/js/plugins/friends.js?time=1660103218138","parallax":"/js/plugins/parallax.js?time=1660103218138","rightMenu":"/js/plugins/rightMenu.js?time=1660103218138","contributors":"/js/plugins/contributors.js?time=1660103218138","message":"/js/thirdparty/message.js?time=1660103218138","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660103218138","search":"/js/search/hexo.js?time=1660103218138"},"css":{"style":"/css/style.css?time=1660103218138","message":"/css/message.css?time=1660103218138"}},
+    cdn: {"js":{"app":"/js/app.js?time=1660112307612","sites":"/js/plugins/sites.js?time=1660112307612","friends":"/js/plugins/friends.js?time=1660112307612","parallax":"/js/plugins/parallax.js?time=1660112307612","rightMenu":"/js/plugins/rightMenu.js?time=1660112307612","contributors":"/js/plugins/contributors.js?time=1660112307612","message":"/js/thirdparty/message.js?time=1660112307612","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1660112307612","search":"/js/search/hexo.js?time=1660112307612"},"css":{"style":"/css/style.css?time=1660112307612","message":"/css/message.css?time=1660112307612"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Aug 10 2022 11:46:58 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Aug 10 2022 14:18:27 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","repos","category","tagcloud","donate"],
       for_post: ["repos","toc"],
@@ -2604,9 +2606,64 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        Vue+element各类问题解决方案记录(网站资源)
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/assets/img/user_avatar.png" class="lazyload" data-srcset="/assets/img/user_avatar.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Mr.阿Q</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-08-10T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月10日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.6k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：7 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
@@ -2715,10 +2772,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-08-10T16:22:18+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-10T14:11:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年8月10日</p>
+    <p>更新于：2022年8月10日</p>
   </a>
 </div>
 
@@ -2726,6 +2783,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Element-UI/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Element UI</p></a></div>
+  <span hidden itemprop="keywords">Vue Element UI</span>
+
 
         
       
@@ -2737,7 +2798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title= - Mr.阿Q&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title=Vue+element各类问题解决方案记录(网站资源) - Mr.阿Q&summary="
           
           >
           
@@ -2749,7 +2810,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title= - Mr.阿Q&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title=Vue+element各类问题解决方案记录(网站资源) - Mr.阿Q&summary="
           
           >
           
@@ -2761,7 +2822,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title= - Mr.阿Q&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/&title=Vue+element各类问题解决方案记录(网站资源) - Mr.阿Q&summary="
           
           >
           
@@ -2800,13 +2861,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         </a>
       
       
-        <a class='next' href='/2021/07/div%E7%9A%84%E6%96%9C%E6%9D%A1%E7%BA%B9%E8%83%8C%E6%99%AFCSS%E4%BB%A3%E7%A0%81/'>
-          <p class='title'>div的斜条纹背景CSS代码<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>div的斜条纹背景CSS代码
-
-注意：以下为在Vue环境下的测试
-
-DIV部分：123456789&lt;div style=&quot;margin-top: 10px;padding: 10...</p>
+        <a class='next' href='/2021/07/JS%20%E5%A4%8D%E5%88%B6%E6%96%B9%E6%B3%95/'>
+          <p class='title'>JS 复制方法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>JS 复制方法123456789101112131415copyLink(label, val) &#123;    let textarea = document.createElement(...</p>
         </a>
       
     </div>
@@ -2932,8 +2989,8 @@ DIV部分：123456789&lt;div style=&quot;margin-top: 10px;padding: 10...</p>
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Vue+element各类问题解决方案记录(网站资源)";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3048,7 +3105,7 @@ DIV部分：123456789&lt;div style=&quot;margin-top: 10px;padding: 10...</p>
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1660103218138.js"></script>
+<script src="/js/app.js?time=1660112307612.js"></script>
 
 
 
@@ -3206,7 +3263,7 @@ DIV部分：123456789&lt;div style=&quot;margin-top: 10px;padding: 10...</p>
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1660103218138')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1660112307612')</script>
 
 
 
@@ -3335,19 +3392,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1660103218138")
+        volantis.js("/js/plugins/sites.js?time=1660112307612")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1660103218138")
+        volantis.js("/js/plugins/friends.js?time=1660112307612")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1660103218138")
+        volantis.js("/js/plugins/contributors.js?time=1660112307612")
       }
     
   };
@@ -3433,7 +3490,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     el: '#vssue',
     render: h => h('Vssue', {
       props: {
-        title: " - Mr.阿Q",
+        title: "Vue+element各类问题解决方案记录(网站资源) - Mr.阿Q",
         options: {
           owner: '',
           repo: '',
@@ -3462,7 +3519,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1660103218138");
+    return volantis.js("/js/search/hexo.js?time=1660112307612");
   }
 
   function loadSearchService() {
@@ -3531,7 +3588,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-2.jpeg","/assets/img/bg-imgs/bj-13.jpg","/assets/img/bg-imgs/bj-10.jpg"];
+  let imgs = ["/assets/img/bg-imgs/bj-2.jpeg","/assets/img/bg-imgs/bj-11.jpg","/assets/img/bg-imgs/bj-6.jpeg","/assets/img/bg-imgs/bj-13.jpg","/assets/img/bg-imgs/bj-10.jpg","/assets/img/bg-imgs/bj-5.jpeg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3572,7 +3629,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1660103218138').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1660112307612').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -3806,7 +3863,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.阿Q","url":"https://leiqun1998.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/","sameAs":["https://github.com/volantis-x"],"description":"分享踩坑技术和生活"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://leiqun1998.github.io/","name":"Mr.阿Q"}},{"@type":"ListItem","position":3,"item":{"@id":"https://leiqun1998.github.io/2021/08/Vue+element 各类问题解决方案记录(网站资源)/","name":""}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"","description":"","datePublished":"2021-08-10T08:22:18.000Z","dateModified":"2021-08-10T08:22:18.000Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/"},"author":{"@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/"},"publisher":{"@type":"Organization","name":"Mr.阿Q","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/","wordCount":0,"image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.阿Q","url":"https://leiqun1998.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/","sameAs":["https://github.com/volantis-x"],"description":"分享踩坑技术和生活"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://leiqun1998.github.io/","name":"Mr.阿Q"}},{"@type":"ListItem","position":3,"item":{"@id":"https://leiqun1998.github.io/2021/08/Vue+element 各类问题解决方案记录(网站资源)/","name":"Vue+element各类问题解决方案记录(网站资源)"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Vue+element各类问题解决方案记录(网站资源)","description":"","datePublished":"2021-08-09T16:00:00.000Z","dateModified":"2022-08-10T06:11:49.248Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/"},"author":{"@type":"Person","name":"Mr.阿Q","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://leiqun1998.github.io/"},"publisher":{"@type":"Organization","name":"Mr.阿Q","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://leiqun1998.github.io/2021/08/Vue+element%20%E5%90%84%E7%B1%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E8%AE%B0%E5%BD%95(%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90)/","wordCount":0,"keywords":"Vue,Element UI","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
